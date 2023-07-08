@@ -1,22 +1,14 @@
-import Link from 'next/link';
+import MapComponent from '../components/MapComponent';
 import { locations } from '@/lib/data';
-import { LocationData } from '@/lib/data';
+import { NextPage } from 'next';
 
-export default function Home() {
+const Home: NextPage = () => {
     return (
         <div>
             <h1>Locations</h1>
-            {locations.map((location: LocationData) => (
-                <div key={location.id}>
-                    <Link href={`/location/${location.id}`}>
-                        <div>
-                            <h2>{location.name}</h2>
-                            <img src={location.imageUrl} alt={location.name} width={200} height={200} />
-                            <p>{location.address}</p>
-                        </div>
-                    </Link>
-                </div>
-            ))}
+            <MapComponent locations={locations} />
         </div>
     );
-}
+};
+
+export default Home;

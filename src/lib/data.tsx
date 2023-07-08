@@ -12,7 +12,7 @@ export type LocationData = {
 
 export const locations: LocationData[] = [
     {
-        id: '1',
+        id: 'national-gallery-of-ireland',
         name: 'National Gallery of Ireland',
         address: 'Ooo yaaa',
         description: 'Zucc deez nuts',
