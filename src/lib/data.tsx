@@ -1,7 +1,9 @@
 export type LocationData = {
     id: string;
     name: string;
-    address: string;
+    artist: string;
+    location: string;
+    google_maps_link: string;
     description: string;
     coordinates: {
         lat: number;
@@ -13,9 +15,11 @@ export type LocationData = {
 export const locations: LocationData[] = [
     {
         id: 'national-gallery-of-ireland',
-        name: 'National Gallery of Ireland',
-        address: 'Ooo yaaa',
-        description: 'Zucc deez nuts',
+        name: 'The Mother of Sorrows',
+        artist: 'Harry Clarke',
+        location: 'National Gallery of Ireland',
+        google_maps_link: '',
+        description: 'Description text',
         coordinates: {
             lat: 53.34099820201343,
             long: -6.252499104950858,
@@ -24,13 +28,15 @@ export const locations: LocationData[] = [
     },
     {
         id: 'hugh-lane-gallery',
-        name: 'Hugh Lane Gallery',
-        address: 'Ooo yaaa',
-        description: 'Zucc deez nuts',
+        name: '\'Mr Gilhooley by Liam O\'Flaherty\' for the Geneva Window',
+        artist: 'Harry Clarke',
+        location: 'Hugh Lane Gallery, Dublin',
+        google_maps_link: '',
+        description: 'Description text',
         coordinates: {
             lat: 53.354212965440375,
             long: -6.264779904090209,
         },
-        imageUrl: 'https://i.imgur.com/KscSzw7m.jpeg',
+        imageUrl: 'https://i.imgur.com/GdzHYPQh.jpeg',
     }
 ];
