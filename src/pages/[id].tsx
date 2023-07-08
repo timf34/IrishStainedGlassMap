@@ -12,12 +12,12 @@ export default function Location() {
     }
 
     return (
-        <div>
-            <h1>{location.name}</h1>
-            <img src={location.imageUrl} alt={location.name} />
-            <p>{location.address}</p>
-            <p>{location.description}</p>
-            <a href="./">Back to locations</a>
+        <div className="flex flex-col items-center justify-center min-h-screen py-2">
+            <h1 className="text-4xl font-bold mb-4">{location.name}</h1>
+            <img src={location.imageUrl} alt={location.name} className="w-full max-w-md mb-4 rounded-md shadow-md" />
+            <p className="text-xl font-semibold mb-2">{location.location}</p>
+            <p className="text-lg mb-4">{location.description}</p>
+            <a href="./" className="text-blue-500 hover:underline">Back to locations</a>
         </div>
     );
 }

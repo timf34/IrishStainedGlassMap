@@ -15,8 +15,8 @@ const MapComponent: React.FC<MapComponentProps> = ({locations}) => {
 
     // Define map properties
     const mapContainerStyle = {
-        height: '50vh',
-        width: '50vw',
+        height: '100%',
+        width: '100%',
     };
 
     const defaultCenter = {
