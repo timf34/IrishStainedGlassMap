@@ -22,4 +22,15 @@ export const locations: LocationData[] = [
         },
         imageUrl: 'https://i.imgur.com/KscSzw7m.jpeg',
     },
+    {
+        id: 'hugh-lane-gallery',
+        name: 'Hugh Lane Gallery',
+        address: 'Ooo yaaa',
+        description: 'Zucc deez nuts',
+        coordinates: {
+            lat: 53.354212965440375,
+            long: -6.264779904090209,
+        },
+        imageUrl: 'https://i.imgur.com/KscSzw7m.jpeg',
+    }
 ];
