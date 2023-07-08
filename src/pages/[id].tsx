@@ -5,7 +5,6 @@ import { LocationData } from '@/lib/data';
 export default function Location() {
     const router = useRouter();
     const { id } = router.query;
-    console.log("ID: " + id);
     const location = locations.find((location: LocationData) => location.id === id);
 
     if (!location) {
