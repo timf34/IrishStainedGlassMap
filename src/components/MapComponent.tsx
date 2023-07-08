@@ -15,8 +15,8 @@ const MapComponent: React.FC<MapComponentProps> = ({locations}) => {
 
     // Define map properties
     const mapContainerStyle = {
-        height: '100vh',
-        width: '100vw',
+        height: '50vh',
+        width: '50vw',
     };
 
     const defaultCenter = {
@@ -38,7 +38,7 @@ const MapComponent: React.FC<MapComponentProps> = ({locations}) => {
                                 lat: location.coordinates.lat,
                                 lng: location.coordinates.long
                             }}
-                            onClick={() => router.push(`/location/${location.id}`)}
+                            onClick={() => router.push(`/${location.id}`)}
                         />
                     ))
                 }
