@@ -9,7 +9,7 @@ type MapComponentProps = {
 const MapComponent: React.FC<MapComponentProps> = ({locations}) => {
     const router = useRouter();
 
-    const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+    const GOOGLE_MAPS_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '';
 
     console.log("GMaps API Key: " + GOOGLE_MAPS_API_KEY);
 
