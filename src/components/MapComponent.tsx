@@ -65,7 +65,7 @@ const MapComponent: React.FC<MapComponentProps> = ({locations}) => {
                                 lng: selectedLocation.coordinates.long
                             }}
                         >
-                            <div onClick={() => router.push(`/${selectedLocation.id}`)}>
+                            <div className="shadow-2xl" onClick={() => router.push(`/${selectedLocation.id}`)}>
                                 <p className="text-xl text-center">{selectedLocation.artist}</p>
                                 <img src={selectedLocation.imageUrl} alt={selectedLocation.name} className="w-32 h-32 object-cover" />
                             </div>
